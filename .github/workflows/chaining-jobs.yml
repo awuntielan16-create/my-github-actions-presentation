@@ -26,10 +26,8 @@ jobs:
       - job-1
     steps:
       - name: Output for Job 2
-        run: echo "exit 1"
-      - name: nake job 2 fail 
+        run: echo "job 2 runing"
         
-    
   job-3:
     name: Job 3
     if: github.event.inputs.run-job-3 == 'true'
