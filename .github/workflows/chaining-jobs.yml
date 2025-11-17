@@ -28,7 +28,7 @@ jobs:
       - name: Output for Job 2
         run: echo "exit 1"
       - name: nake job 2 fail 
-        run: exit 1
+        
     
   job-3:
     name: Job 3
