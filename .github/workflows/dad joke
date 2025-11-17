@@ -1,0 +1,10 @@
+jobs:
+  tellmeajoke:
+    runs-on: ubuntu-latest
+    steps:
+      # Get the joke
+      - id: myjoke
+        uses: mickeygoussetorg/get-a-dad-joke@v1
+      # Use the joke output in another step
+      - name: Output Dad Joke
+        run: echo "${{ steps.myjoke.outputs.dad-joke }}"
